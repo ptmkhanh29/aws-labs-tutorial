@@ -5,10 +5,15 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write 
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v4
         with:
           python-version: 3.x
-      - run: pip install mkdocs mkdocs-material
+      - run: pip install mkdocs mkdocs-material mkdocs-minify-plugin
+      - run: mkdocs build
       - run: mkdocs gh-deploy --force
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

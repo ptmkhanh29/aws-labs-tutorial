@@ -1,14 +1,14 @@
 # Project information
-site_name: Material for MkDocs
-site_url: https://squidfunk.github.io/mkdocs-material/
-site_author: Martin Donath
+site_name: Thực hành AWS
+site_url: https://ptmkhanh29.github.io/aws-labs-tutorial/
+site_author: Khanh Phan
 site_description: >-
   Write your documentation in Markdown and create a professional static site in
   minutes – searchable, customizable, in 60+ languages, for all devices
 
 # Repository
 repo_name: squidfunk/mkdocs-material
-repo_url: https://github.com/squidfunk/mkdocs-material
+repo_url: https://github.com/ptmkhanh29/aws-labs-tutorial
 
 # Copyright
 copyright: Copyright &copy; 2016 - 2025 Martin Donath
